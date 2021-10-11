@@ -19,7 +19,7 @@ body {
   overflow-x: hidden;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -105,7 +105,7 @@ p {
 //Navigation
 .navbar {
   width: 100%;
-  padding: 1.2rem 5rem;
+  padding: .5rem 5rem;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -114,6 +114,7 @@ p {
   top: 0;
   left: 0;
   z-index: 10;
+  // background-color: red; 
 
   .navbar__toggler__open {
     display: none;
@@ -123,7 +124,7 @@ p {
     @extend .center;
     img,
     svg {
-      width: 30px;
+      width: 100px;
     }
 
     span {
@@ -137,8 +138,9 @@ p {
   .navbar__web {
     .navbar__list {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
+      padding-top: 0.8rem;
 
       ul {
         white-space: nowrap;
@@ -259,7 +261,6 @@ p {
 
 //Header
 .header {
-
   .header-left {
     h1 {
       font-weight: 700;
@@ -513,19 +514,9 @@ footer {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 
-  .logo{
-    @extend .center;
-
-    span{
-      font-size: 12px;
-      font-weight: 300;
-      margin-left: 5px;
-    }
-  }
-
   .footer-left {
     img {
-      width: 60px;
+      width: 140px;
     }
   }
 
@@ -561,8 +552,8 @@ footer {
 //End of Contact
 
 //Admin
-.admin{
-  h6{
+.admin {
+  h6 {
     font-weight: 300;
     color: $text;
     font-size: 12px;
@@ -572,7 +563,7 @@ footer {
     transform: translate(-50%, -50%);
     opacity: 0;
 
-    span{
+    span {
       color: $black;
       font-weight: 400;
     }
@@ -716,12 +707,12 @@ footer {
       justify-content: center;
 
       img {
-        width: 60px;
+        width: 100px;
       }
     }
 
-    .footer-right{
-      h1{
+    .footer-right {
+      h1 {
         font-size: 22px;
       }
     }
